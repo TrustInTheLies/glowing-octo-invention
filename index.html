@@ -20,7 +20,9 @@
   </head>
   <body>
     <header class="header">
-      <nav class="navbar navbar-expand-sm navbar-light bg-light">
+      <nav
+        class="navbar navbar-expand-sm navbar-light bg-light position-fixed w-100"
+      >
         <button
           class="navbar-toggler ml-auto"
           type="button"
@@ -37,65 +39,58 @@
           id="navbarNavAltMarkup"
         >
           <div class="navbar-nav">
-            <a class="nav-link" href="#">Me</a>
-            <a class="nav-link" href="#">Projects</a>
-            <a class="nav-link" href="#">Contacts</a>
+            <a class="nav-link link" href="#me">Me</a>
+            <a class="nav-link link" href="#projects">Projects</a>
+            <a class="nav-link link" href="#contacts">Contacts</a>
           </div>
         </div>
       </nav>
     </header>
-    <section class="title">
-      <navbar class="widescreen-nav">
-        <div class="widescreen-nav-item">
-          <a href="#">Me</a>
-        </div>
-        <div class="widescreen-nav-item">
-          <a href="#">Projects</a>
-        </div>
-        <div class="widescreen-nav-item">
-          <a href="#">Contacts</a>
-        </div>
-      </navbar>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-12 col-lg-6">
+    <section class="title" id="me">
+      <div class="container-fluid h-100">
+        <div class="row h-100">
+          <div class="col-12 col-lg-6 d-flex align-items-center text-right">
             <h1 class="title-name">Artem Morinov</h1>
           </div>
-          <div class="col-12 col-lg-6">
+          <div
+            class="col-12 col-lg-6 d-flex flex-column justify-content-end align-items-end"
+          >
             <p class="title-email">morinov.art@gmail.com</p>
             <h3 class="title-profession">/Web Developer</h3>
           </div>
         </div>
       </div>
     </section>
-    <section class="projects">
+    <section class="projects" id="projects">
       <div class="container-fluid">
-        <div class="row">
-          <div class="col-12 col-lg-6">
-            <h3 class="project-title">PROJECT</h3>
+        <div class="row align-items-center">
+          <div class="col-12 col-lg-6 mb-3">
+            <h3 class="project-title text-right mb-0">PROJECT</h3>
+          </div>
+          <div class="col-12 col-lg-6 mb-3">
+            <p class="project-description mb-0">Layout Clone</p>
           </div>
           <div class="col-12 col-lg-6">
-            <p class="project-description">Layout Clone</p>
+            <h2 class="project-name text-right mb-0">Airbnb News</h2>
           </div>
           <div class="col-12 col-lg-6">
-            <h2 class="project-name">Airbnb News</h2>
-          </div>
-          <div class="col-12 col-lg-6">
-            <p class="project-description-extended">
+            <p class="project-description-extended mb-0">
               Making adaptive clone of Airbnb News for Desktop and Mobile
               devices
             </p>
           </div>
         </div>
-        <div class="row">
-          <div class="col-12 col-lg-6">
+        <div
+          class="project-images d-flex justify-content-center flex-wrap my-5"
+        >
+          <div class="image-wrapper mb-5">
             <img
               src="./images/phone-no-border-with-site.png"
               alt="site on phone"
               class="project-image"
             />
           </div>
-          <div class="col-12 col-lg-6">
+          <div class="image-wrapper ml-5">
             <img
               src="./images/pc-with-site.png"
               alt="site on pc"
@@ -105,23 +100,26 @@
         </div>
       </div>
     </section>
-    <footer class="footer">
+    <footer class="footer p-5" id="contacts">
+      <h2 class="footer-title ml-5 mb-5">About Me</h2>
       <div class="container-fluid">
         <div class="row">
-          <div class="col-12 col-lg-6">
+          <div class="col-12 col-lg-6 d-flex justify-content-center">
             <img
               src="./images/face.png"
               alt="author photo"
-              class="author-photo"
+              class="author-photo rounded-circle"
             />
           </div>
-          <div class="col-12 col-lg-6">
+          <div
+            class="col-12 col-lg-6 d-flex flex-column justify-content-around"
+          >
             <p class="footer-paragraph">
               Exploring world of web development, currently improving myself at
               Altcademy
             </p>
             <p class="footer-paragraph">Feel free to contact!</p>
-            <div class="socials">
+            <div class="socials d-flex justify-content-around">
               <a href="#"
                 ><img
                   src="./images/github.svg"

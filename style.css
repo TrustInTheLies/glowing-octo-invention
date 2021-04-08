@@ -2,7 +2,66 @@ body {
   font-family: "Inter", sans-serif;
 }
 
-section {
-  padding-left: 5%;
-  padding-right: 5%;
+.link {
+  color: #000;
+  font-weight: 500;
+}
+
+.navbar {
+  z-index: 10;
+}
+
+.title {
+  padding: 0;
+  border-bottom: 5px solid #000;
+  max-width: 90%;
+  height: 90vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title-name {
+  font-size: 100px;
+}
+
+.project-images {
+  border-bottom: 2px solid #ddd;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.projects {
+  padding-top: 100px;
+}
+
+.project-image {
+  max-height: 460px;
+  max-width: 100%;
+}
+
+.footer {
+  background-color: #000;
+}
+
+.footer-paragraph {
+  font-size: 24px;
+  color: #fff;
+}
+
+.footer-title {
+  color: #fff;
+  font-size: 50px;
+}
+
+.socials {
+  border-radius: 10px;
+  max-width: 500px;
+  background-color: #fff;
+}
+
+.social-link {
+  padding: 10px;
+  width: 100px;
+  height: 100px;
 }
